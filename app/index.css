@@ -11,6 +11,11 @@ body {
 	color: #fff;
 }
 
+@media (max-width: 375px){
+	body{
+	}
+}
+
 ul {
 	margin: 0;
 	padding: 0;
@@ -27,6 +32,14 @@ ul {
 	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.14);
 }
 
+@media (max-width: 375px){
+	#main-header {
+		height: 10%;
+		transition-property: opacity, left, top, height;
+  		transition-duration: 3s, 5s, 3s, 5s;
+	}	
+}
+
 #main-header h2 {
 	margin: 17px 0 0 30px;
 	text-transform: uppercase;
@@ -34,6 +47,13 @@ ul {
 	font-size: 20px;
 	font-weight: 400;
 	float: left;
+}
+
+@media (max-width: 375px){
+	#main-header h2{
+		font-size: 15px;
+		letter-spacing: 2px;
+	}	
 }
 
 #main-header a {
@@ -45,6 +65,14 @@ ul {
 	color: #448D7A;
 	text-decoration: none;
 }
+
+@media (max-width: 375px){
+	#main-header a{
+		font-size: 15px;
+		letter-spacing: 1px;
+	}	
+}
+
 
 /*aside*/
 #main-container aside#main-nav {
@@ -74,11 +102,24 @@ ul {
 	color: #fff;
 }
 
+@media (max-width: 375px){
+	#main-container aside#main-nav{
+		display: none;
+	}	
+}
+
 /*sections*/
 #main-container #main-sections-container{
 	float: right;
 	width: 65%;
 	margin: 56px 50px 0 0;
+}
+
+@media (max-width: 375px){
+  	#main-container #main-sections-container{
+		width: 100%;
+		margin: 56px 0 0 0;
+	}	
 }
 
 #main-container #main-sections-container section{
@@ -87,6 +128,12 @@ ul {
 	color: #448D7A;
 	border-radius: 1px;
 	box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+}
+
+@media (max-width: 375px){
+	#main-container #main-sections-container section{
+ 		position: relative;
+ 	}  		
 }
 
 #main-container #main-sections-container section header{
@@ -100,6 +147,15 @@ ul {
 	float: left;
 }
 
+@media (max-width: 375px){
+	#main-container #main-sections-container section header{
+		float: none;
+		position: absolute;
+		
+	
+	}  		
+}
+
 #main-container #main-sections-container section header h2{
 	margin: 0;
 	text-transform: uppercase;
@@ -107,6 +163,15 @@ ul {
 	font-size: 15px;
 	font-weight: 400;
 	line-height: 26px;
+}
+
+@media (max-width: 375px){
+   	#main-container #main-sections-container section header h2{
+   		position: absolute;
+   		width: 100%
+   		margin: 50%;
+
+  	}
 }
 
 #main-container #main-sections-container section div.full{
@@ -117,6 +182,28 @@ ul {
 	background-color: #448D7A;
 	color: #fff;
 	margin: 15px 15px 45px 15px;
+}
+
+@media (max-width: 375px){
+	#main-container #main-sections-container section div.full{
+		position: absolute;
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+		background-color: #004D40;
+		color: #fff;
+		margin: 15px 15px 20px 150px;
+	    bottom: 0px;
+
+
+	}
+}
+
+
+@media (max-width: 375px){
+	#main-container #main-sections-container section article{
+		height: 500px;
+  	}
 }
 
 #main-container #main-sections-container section div.full span{
@@ -136,9 +223,23 @@ ul {
 	overflow: hidden;
 }
 
+@media (max-width: 375px){
+	#main-container #main-sections-container section article{
+		height: 400px;
+  	}
+}
+
 #main-container #main-sections-container section article img{
 	float: left;
 	margin-right: 15px;
+}
+
+
+@media (max-width: 375px){
+	#main-container #main-sections-container section article img{
+		padding: 0px,0px,0px,0px;
+
+  	}
 }
 
 #main-container #main-sections-container section article p{
